@@ -8,47 +8,72 @@
   <meta property="og:title" content="Wesley Diogo do Vale · Portfólio">
   <meta property="og:description" content="Integrações, automações e agentes de IA para contact center.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://welisy.github.io/">
+  <meta property="og:image" content="https://welisy.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EWV%3C/text%3E%3C/svg%3E">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <a href="#inicio" class="brand">Wesley Diogo do Vale</a>
+    <a href="#inicio" class="brand"><span class="brand-full">Wesley Diogo do Vale</span><span class="brand-short">Wesley</span></a>
     <nav>
       <a href="#projetos">Projetos</a>
-      <a href="#stack">Stack</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#stack" class="nav-stack">Stack</a>
       <a href="#contato">Contato</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Alternar tema claro e escuro">
+      <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </div>
 </header>
 
 <main id="inicio">
 
   <section class="hero wrap">
-    <p class="eyebrow">Professional Services · Grupo 3C</p>
-    <h1>Integrações, automações e agentes de IA para contact center.</h1>
-    <p class="lead">
-      Conecto plataformas de telefonia e WhatsApp a CRMs, helpdesks, sistemas de governo e agentes de IA
-      de clientes grandes. Cuido do levantamento ao go-live, quase sempre como o único responsável técnico do projeto.
-    </p>
-    <div class="cta">
-      <a class="btn primary" href="#projetos">Ver projetos</a>
-      <a class="btn" href="#contato">Falar comigo</a>
+    <div class="hero-text">
+      <p class="eyebrow">Professional Services · Grupo 3C</p>
+      <h1>Integrações, automações e agentes de IA para contact center.</h1>
+      <p class="lead">
+        Conecto plataformas de telefonia e WhatsApp a CRMs, helpdesks, sistemas de governo e agentes de IA
+        de clientes grandes. Cuido do levantamento ao go-live, quase sempre como o único responsável técnico do projeto.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn" href="assets/curriculo-wesley-diogo-do-vale.pdf" download>Baixar currículo</a>
+      </div>
+    </div>
+
+    <div class="pipeline" aria-hidden="true">
+      <span class="rail"></span>
+      <span class="packet"></span>
+      <div class="node"><span class="node-k">Entrada</span><strong>WhatsApp · Voz · Chat</strong></div>
+      <div class="node"><span class="node-k">Atendimento</span><strong>Evolux · 3C Plus</strong></div>
+      <div class="node"><span class="node-k">Orquestração</span><strong>n8n · Python · Lambda</strong></div>
+      <div class="node"><span class="node-k">Destino</span><strong>IA · CRM · Helpdesk · Governo</strong></div>
     </div>
   </section>
 
   <div class="wrap">
-  <section class="stats" aria-label="Números">
-    <div class="stat"><strong>330 mil</strong><span>mensagens por mês no maior relatório que mantenho</span></div>
-    <div class="stat"><strong>18 mil</strong><span>ligações coletadas e transcritas para desenhar um agente de voz</span></div>
-    <div class="stat"><strong>10</strong><span>ambientes auditados toda semana para compliance de acessos</span></div>
-    <div class="stat"><strong>15+</strong><span>clientes corporativos e de governo atendidos</span></div>
-  </section>
+    <section class="stats" aria-label="Números">
+      <div class="stat"><strong data-count="330" data-suffix=" mil">330 mil</strong><span>mensagens por mês no maior relatório que mantenho</span></div>
+      <div class="stat"><strong data-count="18" data-suffix=" mil">18 mil</strong><span>ligações coletadas e transcritas para desenhar um agente de voz</span></div>
+      <div class="stat"><strong data-count="10">10</strong><span>ambientes auditados toda semana para compliance de acessos</span></div>
+      <div class="stat"><strong data-count="15" data-suffix="+">15+</strong><span>clientes corporativos e de governo atendidos</span></div>
+    </section>
   </div>
 
   <section id="projetos" class="wrap section">
@@ -57,27 +82,29 @@
       <p>Nomes de clientes omitidos por confidencialidade. Os números são reais.</p>
     </div>
 
+    <div class="filters" role="group" aria-label="Filtrar projetos por área">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">Todos <span class="count"></span></button>
+      <button type="button" class="chip" data-filter="ia" aria-pressed="false">IA <span class="count"></span></button>
+      <button type="button" class="chip" data-filter="whatsapp" aria-pressed="false">WhatsApp <span class="count"></span></button>
+      <button type="button" class="chip" data-filter="voz" aria-pressed="false">Voz e URA <span class="count"></span></button>
+      <button type="button" class="chip" data-filter="dados" aria-pressed="false">Dados e relatórios <span class="count"></span></button>
+      <button type="button" class="chip" data-filter="integracoes" aria-pressed="false">Integrações <span class="count"></span></button>
+    </div>
+
+    <div data-group>
+
     <!-- 1 -->
-    <article class="case">
+    <article class="case reveal" data-area="ia whatsapp integracoes">
       <div class="case-meta">
         <span class="sector">Banco · crédito imobiliário</span>
         <span class="status live">Em produção</span>
       </div>
       <h3>Agente de IA no WhatsApp para o pré-onboarding de crédito imobiliário</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>O banco queria que um agente de IA, hospedado pela consultoria parceira na AWS, acompanhasse
-          clientes na fase de pré-onboarding do financiamento. Tinha que rodar no mesmo número de WhatsApp da
-          operação e passar a conversa para um humano quando precisasse.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>O CRM alimenta uma campanha no Evolux com os dados da proposta, que viram campos da conversa.
-          A resposta do cliente cai num bot dedicado que chama um middleware em n8n. O n8n autentica no agente
-          (OAuth client credentials), injeta o contexto da proposta na primeira mensagem e devolve as respostas
-          de forma assíncrona pela API de conversas. Transferência para humano e encerramento são sinais do próprio agente.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>O banco queria que um agente de IA, hospedado pela consultoria parceira na AWS, acompanhasse
+        clientes na fase de pré-onboarding do financiamento. Tinha que rodar no mesmo número de WhatsApp da
+        operação e passar a conversa para um humano quando precisasse.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>Salesforce</li><li>Campanha Evolux</li><li>Bot</li><li>n8n + OAuth</li><li>Agente de IA (AWS)</li><li>API de conversas</li>
@@ -87,29 +114,27 @@
         <p>Cinco cenários testados ao vivo antes do go-live (campos, ordem de 8/8 mensagens, envio assíncrono,
         transbordo e encerramento). Em produção desde outubro de 2026, com CPF removido do tráfego e filtro de eco nas mensagens.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>O CRM alimenta uma campanha no Evolux com os dados da proposta, que viram campos da conversa.
+        A resposta do cliente cai num bot dedicado que chama um middleware em n8n. O n8n autentica no agente
+        (OAuth client credentials), injeta o contexto da proposta na primeira mensagem e devolve as respostas
+        de forma assíncrona pela API de conversas. Transferência para humano e encerramento são sinais do próprio agente.</p>
+      </details>
       <ul class="tags"><li>n8n</li><li>OAuth 2.0</li><li>REST</li><li>WhatsApp Business</li><li>Evolux CX</li></ul>
     </article>
 
     <!-- 2 -->
-    <article class="case">
+    <article class="case reveal" data-area="ia voz whatsapp dados">
       <div class="case-meta">
         <span class="sector">Bancos · qualidade</span>
         <span class="status live">Em produção</span>
       </div>
       <h3>Avaliação de qualidade por IA em ligações e conversas de WhatsApp</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>Monitoria de qualidade manual cobre uma fração pequena dos atendimentos. Duas operações bancárias
-          queriam avaliar ligações e conversas com IA, cada fila com o seu critério, sem ninguém subir arquivo à mão.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>Pipelines em n8n capturam o fim de cada atendimento, filtram o que vale avaliar (mínimo de interação,
-          sem mensagens de bot), agrupam por fila e enviam em lote para a API de análise com o critério certo.
-          Na voz, a amostra prioriza detratores (NPS até 6 ou CSAT insatisfeito) e completa por sorteio até o
-          limite diário de minutos. Os critérios são criados por API, com script idempotente.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>Monitoria de qualidade manual cobre uma fração pequena dos atendimentos. Duas operações bancárias
+        queriam avaliar ligações e conversas com IA, cada fila com o seu critério, sem ninguém subir arquivo à mão.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>Webhook / relatório Evolux</li><li>n8n: filtro + buffer</li><li>Lotes por fila</li><li>API de análise (IA)</li><li>Painel de qualidade</li>
@@ -120,29 +145,27 @@
         separei duas causas (token de gravação errado e áudio ainda indisponível no envio) e entreguei ao time do
         produto um caso mínimo reproduzível.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>Pipelines em n8n capturam o fim de cada atendimento, filtram o que vale avaliar (mínimo de interação,
+        sem mensagens de bot), agrupam por fila e enviam em lote para a API de análise com o critério certo.
+        Na voz, a amostra prioriza detratores (NPS até 6 ou CSAT insatisfeito) e completa por sorteio até o
+        limite diário de minutos. Os critérios são criados por API, com script idempotente.</p>
+      </details>
       <ul class="tags"><li>n8n</li><li>Python</li><li>Multipart</li><li>Google Sheets</li><li>IA</li></ul>
     </article>
 
     <!-- 3 -->
-    <article class="case">
+    <article class="case reveal" data-area="dados whatsapp">
       <div class="case-meta">
         <span class="sector">Plano de saúde · dados</span>
         <span class="status live">Mensal</span>
       </div>
       <h3>Relatório mensal de 330 mil disparos de WhatsApp</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>O relatório de status de guia enviado aos beneficiários vinha de um notebook que falhava todo mês:
-          cookie expirado, linhas duplicadas ou faltando em volume alto e filtro de template quebrando a cada renomeação.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>Reescrevi como uma CLI em Python. Login programático; coleta por janela de tempo adaptativa, que se
-          subdivide até a fatia caber numa paginação rasa (o offset profundo da API era instável); descoberta
-          automática dos templates do período; e enriquecimento paralelo (12 workers, cerca de 50 req/s, retomável)
-          para recuperar o texto exato de cada mensagem.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>O relatório de status de guia enviado aos beneficiários vinha de um notebook que falhava todo mês:
+        cookie expirado, linhas duplicadas ou faltando em volume alto e filtro de template quebrando a cada renomeação.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>API Evolux</li><li>Coleta adaptativa</li><li>Enriquecimento paralelo</li><li>Planilha consolidada</li>
@@ -152,28 +175,27 @@
         <p>175 mil registros de quinze dias coletados sem duplicidade. O relatório que quebrava todo mês passou a rodar
         de ponta a ponta com um comando.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>Reescrevi como uma CLI em Python. Login programático; coleta por janela de tempo adaptativa, que se
+        subdivide até a fatia caber numa paginação rasa (o offset profundo da API era instável); descoberta
+        automática dos templates do período; e enriquecimento paralelo (12 workers, cerca de 50 req/s, retomável)
+        para recuperar o texto exato de cada mensagem.</p>
+      </details>
       <ul class="tags"><li>Python</li><li>Concorrência</li><li>REST</li><li>XLSX</li></ul>
     </article>
 
     <!-- 4 -->
-    <article class="case">
+    <article class="case reveal" data-area="whatsapp dados">
       <div class="case-meta">
         <span class="sector">Banco · atendimento</span>
         <span class="status live">Em produção</span>
       </div>
       <h3>Janela de 24h do WhatsApp: relatório e repescagem automática</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>Quando a operação não responde em 24 horas, a Meta fecha a janela e o atendimento só volta com template pago.
-          Num único fim de semana, 102 conversas expiraram sem resposta.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>Um classificador lê cada conversa a partir da última mensagem do cliente e marca o estado
-          (expirada, em alerta, aberta, respondida), além de anexo, fora de horário e fim de semana. As expiradas
-          viram lista de assinantes de uma campanha de repescagem, que roda como job no Google Cloud Run.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>Quando a operação não responde em 24 horas, a Meta fecha a janela e o atendimento só volta com template pago.
+        Num único fim de semana, 102 conversas expiraram sem resposta.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>API de conversas</li><li>Classificador de janela</li><li>Lista de repescagem</li><li>Campanha com template</li>
@@ -182,27 +204,25 @@
         <h4>Resultado</h4>
         <p>Repescagem enviando sozinha desde outubro de 2026, com cerca de 1.400 clientes recontatados nas três primeiras semanas.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>Um classificador lê cada conversa a partir da última mensagem do cliente e marca o estado
+        (expirada, em alerta, aberta, respondida), além de anexo, fora de horário e fim de semana. As expiradas
+        viram lista de assinantes de uma campanha de repescagem, que roda como job no Google Cloud Run.</p>
+      </details>
       <ul class="tags"><li>Python</li><li>Cloud Run</li><li>WhatsApp templates</li><li>Evolux CX</li></ul>
     </article>
 
     <!-- 5 -->
-    <article class="case">
+    <article class="case reveal" data-area="voz integracoes">
       <div class="case-meta">
         <span class="sector">Governo estadual · voz</span>
         <span class="status">Validado ponta a ponta</span>
       </div>
       <h3>URA de agendamento da Carteira de Identidade Nacional</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>O cidadão precisava agendar a emissão da CIN pelo telefone, e o sistema do governo só era alcançável por rede privada.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>A URA chama um orquestrador em n8n, que chama uma Lambda proxy em Python dentro da VPC, ligada ao
-          gateway do governo por VPN. As respostas saem em formato plano, prontas para TTS, com no máximo três opções
-          por menu ("digite 9 para mais") e erros de negócio em HTTP 200 para a URA sempre conseguir ler a mensagem.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>O cidadão precisava agendar a emissão da CIN pelo telefone, e o sistema do governo só era alcançável por rede privada.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>Cidadão (voz)</li><li>URA Evolux</li><li>n8n</li><li>AWS Lambda (VPC)</li><li>VPN</li><li>API do governo</li>
@@ -211,28 +231,26 @@
         <h4>Resultado</h4>
         <p>Fluxo validado ponta a ponta, com cada retorno do governo registrado no n8n para diagnóstico rápido.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>A URA chama um orquestrador em n8n, que chama uma Lambda proxy em Python dentro da VPC, ligada ao
+        gateway do governo por VPN. As respostas saem em formato plano, prontas para TTS, com no máximo três opções
+        por menu ("digite 9 para mais") e erros de negócio em HTTP 200 para a URA sempre conseguir ler a mensagem.</p>
+      </details>
       <ul class="tags"><li>Evolux Studio</li><li>n8n</li><li>AWS Lambda</li><li>API Gateway</li><li>Python</li></ul>
     </article>
 
     <!-- 6 -->
-    <article class="case">
+    <article class="case reveal" data-area="voz integracoes">
       <div class="case-meta">
         <span class="sector">Serviços · helpdesk</span>
         <span class="status live">Em produção</span>
       </div>
       <h3>Protocolo automático no helpdesk a cada ligação atendida</h3>
-      <div class="case-grid">
-        <div>
-          <h4>Problema</h4>
-          <p>Toda ligação atendida precisava virar ticket, com o CPF e o agente certos. Quando a cobrança transferia
-          para o atendimento, saíam dois protocolos para a mesma chamada.</p>
-        </div>
-        <div>
-          <h4>Solução</h4>
-          <p>Um fluxo n8n escuta o evento de atendimento, interpreta as variáveis da URA, valida o CPF, ignora os agentes
-          da cobrança, faz find-or-create do contato e abre o ticket no agente que recebeu. Na transferência assistida o
-          CPF não vem no evento, então é buscado nos dados da chamada. Um controle por número de origem evita ticket duplicado.</p>
-        </div>
+      <div class="problem">
+        <h4>Problema</h4>
+        <p>Toda ligação atendida precisava virar ticket, com o CPF e o agente certos. Quando a cobrança transferia
+        para o atendimento, saíam dois protocolos para a mesma chamada.</p>
       </div>
       <ol class="flow" aria-label="Fluxo">
         <li>Ligação atendida</li><li>Webhook Evolux</li><li>n8n: regras + dedup</li><li>Agidesk: contato + ticket</li>
@@ -241,63 +259,107 @@
         <h4>Resultado</h4>
         <p>Um protocolo por ligação, inclusive nas transferências.</p>
       </div>
+      <details class="how">
+        <summary>Como resolvi</summary>
+        <p>Um fluxo n8n escuta o evento de atendimento, interpreta as variáveis da URA, valida o CPF, ignora os agentes
+        da cobrança, faz find-or-create do contato e abre o ticket no agente que recebeu. Na transferência assistida o
+        CPF não vem no evento, então é buscado nos dados da chamada. Um controle por número de origem evita ticket duplicado.</p>
+      </details>
       <ul class="tags"><li>n8n</li><li>JavaScript</li><li>Evolux Voz</li><li>Agidesk API</li></ul>
     </article>
+
+    </div>
+
+    <div class="others" data-group>
+      <h2 class="subhead">Outros projetos</h2>
+      <div class="cards">
+        <article class="card reveal" data-area="voz integracoes">
+          <span class="sector">Grupo empresarial · CRM</span>
+          <h3>Screen pop e click-to-call com CRM legado</h3>
+          <p>O painel do agente abre a ocorrência do CRM durante a ligação. Contornei um bug de URL do painel com parâmetro
+          único e redirect 302 no n8n, amarrei o click-to-call ao evento de atendimento e a URA identifica o cliente por CPF ou CNPJ.</p>
+        </article>
+        <article class="card reveal" data-area="integracoes dados">
+          <span class="sector">Consultoria global · compliance</span>
+          <h3>Exportação semanal de acessos para governança de identidade</h3>
+          <p>Fluxo n8n que envia toda sexta os usuários ativos de 10 ambientes para o SailPoint. Corrigi a paginação:
+          um ambiente enviava 24 dos 70 usuários.</p>
+        </article>
+        <article class="card reveal" data-area="ia voz dados">
+          <span class="sector">Banco · IA de voz</span>
+          <h3>Análise de 18 mil ligações para desenhar um agente de voz</h3>
+          <p>Coleta por API e transcrição local com Whisper. Achados que não estavam em relatório nenhum: 32% das chamadas
+          terminavam em transferência e o WhatsApp oficial era confundido com golpe.</p>
+        </article>
+        <article class="card reveal" data-area="whatsapp dados">
+          <span class="sector">Banco digital · WhatsApp</span>
+          <h3>Relatório de saúde do número e falhas de envio</h3>
+          <p>E-mail automático com status do número, templates, volume, custo e falhas por motivo. Cada número do relatório
+          foi conferido contra a API antes de ir para o cliente.</p>
+        </article>
+        <article class="card reveal" data-area="whatsapp">
+          <span class="sector">Plano de saúde · cobrança</span>
+          <h3>Disparo segmentado por vencimento</h3>
+          <p>1.265 contatos divididos em três templates conforme a parcela em aberto; 1.192 entregues e a lista dos não
+          entregues devolvida com o motivo.</p>
+        </article>
+        <article class="card reveal" data-area="whatsapp integracoes">
+          <span class="sector">Indústria de alimentos · logística</span>
+          <h3>Agendamento de entregas pelo WhatsApp</h3>
+          <p>O sistema do cliente dispara um template com as datas, o bot conduz a escolha e devolve o resultado.
+          Homologado ponta a ponta; go-live em dezembro de 2026.</p>
+        </article>
+        <article class="card reveal" data-area="whatsapp">
+          <span class="sector">Plano de saúde · chatbot</span>
+          <h3>Chatbot de WhatsApp para duas pagadoras</h3>
+          <p>Os menus de entrada da URA levados para o chat, com coleta de dados e transbordo para a fila certa.
+          Primeira fase entregue em outubro de 2026.</p>
+        </article>
+        <article class="card reveal" data-area="dados">
+          <span class="sector">Interno · ferramentas</span>
+          <h3>Scripts de volumetria e rotina de demandas</h3>
+          <p>Minutagem de voz e volumetria de mensageria por cliente, validadas contra os totais da API, e um resumo diário
+          automático das demandas abertas no ClickUp.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section class="wrap section">
+  <section id="trajetoria" class="wrap section">
     <div class="section-head">
-      <h2>Outros projetos</h2>
+      <h2>Trajetória</h2>
     </div>
-    <div class="cards">
-      <article class="card">
-        <span class="sector">Grupo empresarial · CRM</span>
-        <h3>Screen pop e click-to-call com CRM legado</h3>
-        <p>O painel do agente abre a ocorrência do CRM durante a ligação. Contornei um bug de URL do painel com parâmetro
-        único e redirect 302 no n8n, amarrei o click-to-call ao evento de atendimento e a URA identifica o cliente por CPF ou CNPJ.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Consultoria global · compliance</span>
-        <h3>Exportação semanal de acessos para governança de identidade</h3>
-        <p>Fluxo n8n que envia toda sexta os usuários ativos de 10 ambientes para o SailPoint. Corrigi a paginação:
-        um ambiente enviava 24 dos 70 usuários.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Banco · IA de voz</span>
-        <h3>Análise de 18 mil ligações para desenhar um agente de voz</h3>
-        <p>Coleta por API e transcrição local com Whisper. Achados que não estavam em relatório nenhum: 32% das chamadas
-        terminavam em transferência e o WhatsApp oficial era confundido com golpe.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Banco digital · WhatsApp</span>
-        <h3>Relatório de saúde do número e falhas de envio</h3>
-        <p>E-mail automático com status do número, templates, volume, custo e falhas por motivo. Cada número do relatório
-        foi conferido contra a API antes de ir para o cliente.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Plano de saúde · cobrança</span>
-        <h3>Disparo segmentado por vencimento</h3>
-        <p>1.265 contatos divididos em três templates conforme a parcela em aberto; 1.192 entregues e a lista dos não
-        entregues devolvida com o motivo.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Indústria de alimentos · logística</span>
-        <h3>Agendamento de entregas pelo WhatsApp</h3>
-        <p>O sistema do cliente dispara um template com as datas, o bot conduz a escolha e devolve o resultado.
-        Homologado ponta a ponta; go-live em dezembro de 2026.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Plano de saúde · chatbot</span>
-        <h3>Chatbot de WhatsApp para duas pagadoras</h3>
-        <p>Os menus de entrada da URA levados para o chat, com coleta de dados e transbordo para a fila certa.
-        Primeira fase entregue em outubro de 2026.</p>
-      </article>
-      <article class="card">
-        <span class="sector">Interno · ferramentas</span>
-        <h3>Scripts de volumetria e rotina de demandas</h3>
-        <p>Minutagem de voz e volumetria de mensageria por cliente, validadas contra os totais da API, e um resumo diário
-        automático das demandas abertas no ClickUp.</p>
-      </article>
+    <div class="timeline-grid">
+      <ol class="timeline">
+        <li class="current reveal">
+          <span class="when">Atual</span>
+          <h3>Grupo 3C</h3>
+          <p class="role">Professional Services · Integrações e automação</p>
+          <p>Integrações, automações e agentes de IA para clientes corporativos e de governo, do levantamento ao go-live.</p>
+        </li>
+        <li class="reveal">
+          <h3>Palinha Musical App</h3>
+          <p class="role">Estagiário back-end</p>
+          <p>Back-end em Laravel e MySQL, criação e consumo de APIs REST e testes de integração com Postman.</p>
+        </li>
+        <li class="reveal">
+          <h3>Projeto MRD</h3>
+          <p class="role">Programador full stack júnior</p>
+          <p>Sistemas CRUD completos em Laravel e MySQL, do back-end ao front-end.</p>
+        </li>
+        <li class="reveal">
+          <span class="when">Início</span>
+          <h3>Atendimento e suporte</h3>
+          <p>Jovem aprendiz, vendas e suporte técnico em informática. Foi onde aprendi a atender cliente, e isso continua sendo a base do meu trabalho.</p>
+        </li>
+      </ol>
+      <aside class="edu reveal">
+        <h3>Formação</h3>
+        <p><strong>Análise e Desenvolvimento de Sistemas</strong><br>Faculdade Vincit · conclusão prevista em dez/2026</p>
+        <h3>Idiomas</h3>
+        <p><strong>Inglês B2</strong><br>Certificado EF SET 52/100 · jul/2025</p>
+        <a class="btn" href="assets/curriculo-wesley-diogo-do-vale.pdf" download>Baixar currículo (PDF)</a>
+      </aside>
     </div>
   </section>
 
@@ -306,12 +368,12 @@
       <h2>Stack</h2>
     </div>
     <div class="stack">
-      <div><h3>Contact center</h3><p>Evolux (voz e CX), 3C Plus, URAs, TTS, screen pop, click-to-call, campanhas</p></div>
-      <div><h3>WhatsApp</h3><p>WhatsApp Business API, 360dialog, templates HSM, janela de 24h, webhooks</p></div>
-      <div><h3>Automação</h3><p>n8n (webhooks, lotes, sub-workflows, MCP), Python, JavaScript</p></div>
-      <div><h3>Nuvem</h3><p>AWS Lambda, API Gateway, VPC, Google Cloud Run</p></div>
-      <div><h3>IA</h3><p>Agentes via webhook (síncrono e assíncrono), avaliação de qualidade, transcrição com Whisper, Claude</p></div>
-      <div><h3>Integrações</h3><p>Salesforce, Zendesk, Agidesk, SailPoint, Pipefy, Google Sheets e Drive, CRMs legados</p></div>
+      <div class="reveal"><h3>Contact center</h3><p>Evolux (voz e CX), 3C Plus, URAs, TTS, screen pop, click-to-call, campanhas</p></div>
+      <div class="reveal"><h3>WhatsApp</h3><p>WhatsApp Business API, 360dialog, templates HSM, janela de 24h, webhooks</p></div>
+      <div class="reveal"><h3>Automação</h3><p>n8n (webhooks, lotes, sub-workflows, MCP), Python, JavaScript</p></div>
+      <div class="reveal"><h3>Nuvem</h3><p>AWS Lambda, API Gateway, VPC, Google Cloud Run</p></div>
+      <div class="reveal"><h3>IA</h3><p>Agentes via webhook (síncrono e assíncrono), avaliação de qualidade, transcrição com Whisper, Claude</p></div>
+      <div class="reveal"><h3>Integrações</h3><p>Salesforce, Zendesk, Agidesk, SailPoint, Pipefy, Google Sheets e Drive, CRMs legados</p></div>
     </div>
   </section>
 
@@ -320,15 +382,15 @@
       <h2>Como trabalho</h2>
     </div>
     <div class="principles">
-      <div>
+      <div class="reveal">
         <h3>Testo antes de perguntar</h3>
         <p>Valido o comportamento da API no ambiente, com teste controlado, e registro o que descobri para o próximo projeto.</p>
       </div>
-      <div>
+      <div class="reveal">
         <h3>Documento para o cliente</h3>
         <p>Contrato de integração, especificação e manual em linguagem simples, antes de escrever código.</p>
       </div>
-      <div>
+      <div class="reveal">
         <h3>Cuido dos dados</h3>
         <p>Tokens fora do código, dados pessoais fora dos logs e credenciais trocadas quando algo vaza.</p>
       </div>
@@ -336,20 +398,25 @@
   </section>
 
   <section id="contato" class="wrap section contact">
-    <h2>Contato</h2>
-    <p>Aberto a conversar sobre projetos de integração, automação e IA aplicada a atendimento.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://www.linkedin.com/in/wesley-diogo-do-vale" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://github.com/welisy" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="mailto:wesleydiogodovale50@gmail.com">wesleydiogodovale50@gmail.com</a>
+    <div class="contact-box reveal">
+      <h2>Vamos conversar?</h2>
+      <p>Aberto a projetos de integração, automação e IA aplicada a atendimento.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/wesley-diogo-do-vale" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/welisy" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:wesleydiogodovale50@gmail.com">wesleydiogodovale50@gmail.com</a>
+        <button type="button" class="btn copy" data-copy="wesleydiogodovale50@gmail.com">Copiar e-mail</button>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="wrap footer">
-  <p>© 2026 Wesley Diogo do Vale</p>
+  <p>© 2026 Wesley Diogo do Vale · Feito em HTML, CSS e JavaScript puro.</p>
 </footer>
 
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="assets/app.js" defer></script>
 </body>
 </html>
